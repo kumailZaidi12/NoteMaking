@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 DateFormat.getDateTimeInstance().format(Date())
             )
             val add = notesList.add(notes)
-//            noteAdapter.notifyDataSetChanged()
+           noteAdapter.notifyDataSetChanged()
             val long = database.insert(notes)
         }
 
